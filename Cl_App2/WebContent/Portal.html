@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ある一日の気温</title>
+</head>
+<body><div style="text-align: center;">
+<img src="Thermo2.png">
+<h2>ようこそ</h2>
+<hr/>
+年月日と地名をお選びください。<br/>
+<br/>
+<form action="Cl_servlet" method="GET">
+<ol>
+<li>年</li>
+<select name="year">
+<option value="2020">2020</option>
+<option value="2019">2019</option>
+<option value="2018">2018</option>
+<option value="2017">2017</option>
+<option value="2016">2016</option>
+</select>
+
+<li>月</li>
+<select name="month">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+
+<li>日</li>
+<select name="day">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+
+<li>都道府県</li>
+<select name="prefecture">
+<option value="愛知県">愛知県</option>
+<option value="岐阜県">岐阜県</option>
+<option value="三重県">三重県</option>
+<option value="静岡県">静岡県</option>
+</select>
+</ol>
+<ul>
+<li>地名（ 愛知県 ）</li>
+<select name="place_04">
+<option value="名古屋">名古屋</option>
+<option value="蟹江">蟹江</option>
+<option value="愛西">愛西</option>
+<option value="一宮">一宮</option>
+<option value="豊山">豊山</option>
+
+<option value="東海">東海</option>
+<option value="大府">大府</option>
+<option value="セントレア">セントレア</option>
+<option value="セントレア">c</option>
+<option value="一色">一色</option>
+
+<option value="蒲郡">蒲郡</option>
+<option value="岡崎">岡崎</option>
+<option value="豊田">豊田</option>
+<option value="小原">小原</option>
+<option value="稲武">稲武</option>
+
+<option value="出来山">出来山</option>
+<option value="茶臼山">茶臼山</option>
+<option value="阿蔵">阿蔵</option>
+<option value="作手">作手</option>
+<option value="鳳来">鳳来</option>
+
+<option value="新城">新城</option>
+<option value="豊橋">豊橋</option>
+<option value="田原">田原</option>
+<option value="伊良湖">伊良湖</option>
+</select>
+
+<li>地名（ 岐阜県 ）</li>
+<select name="place_01">
+<option value="岐阜">岐阜</option>
+<option value="関ケ原">関ケ原</option>
+<option value="大垣">大垣</option>
+<option value="上石津">上石津</option>
+<option value="揖斐川">揖斐川</option>
+
+<option value="小津">小津</option>
+<option value="権現山">権現山</option>
+<option value="樽見">樽見</option>
+<option value="関市板取">関市板取</option>
+<option value="平井">平井</option>
+
+<option value="美濃">美濃</option>
+<option value="美濃加茂">美濃加茂</option>
+<option value="多治見">多治見</option>
+<option value="柄石峠">柄石峠</option>
+<option value="伽藍">伽藍</option>
+
+<option value="恵那">恵那</option>
+<option value="中津川">中津川</option>
+<option value="三森山">三森山</option>
+<option value="黒川">黒川</option>
+<option value="金山">金山</option>
+
+<option value="三界山">三界山</option>
+<option value="付知">付知</option>
+<option value="宮地">宮地</option>
+<option value="八幡">八幡</option>
+<option value="蕪山">蕪山</option>
+
+<option value="白尾山">白尾山</option>
+<option value="白鳥">白鳥</option>
+<option value="長滝">長滝</option>
+<option value="ひるがの">ひるがの</option>
+
+<option value="大日岳">大日岳</option>
+<option value="大日">大日</option>
+<option value="新渕山">新渕山</option>
+<option value="六厩">六厩</option>
+<option value="森茂">森茂</option>
+
+<option value="御母衣">御母衣</option>
+<option value="清見">清見</option>
+<option value="河合">河合</option>
+<option value="白川">白川</option>
+<option value="白川">c</option>
+
+<option value="神岡">神岡</option>
+<option value="栃尾">栃尾</option>
+<option value="十二岳">十二岳</option>
+<option value="丹生川">丹生川</option>
+<option value="乗鞍岳">乗鞍岳</option>
+
+<option value="高山">高山</option>
+<option value="宮之前">宮之前</option>
+<option value="船山">船山</option>
+<option value="萩原">萩原</option>
+</select>
+
+<li>地名（ 三重県 ）</li>
+<select name="place_02">
+<option value="津">津</option>
+<option value="桑名">桑名</option>
+<option value="四日市">四日市</option>
+<option value="雲母峰">雲母峰</option>
+<option value="亀山">亀山</option>
+
+<option value="北勢">北勢</option>
+<option value="笠取山">笠取山</option>
+<option value="上野">上野</option>
+<option value="名張">名張</option>
+<option value="白山">白山</option>
+
+<option value="松阪">松阪</option>
+<option value="国見山">国見山</option>
+<option value="小俣">小俣</option>
+<option value="鳥羽">鳥羽</option>
+<option value="粥見">粥見</option>
+
+<option value="大台">大台</option>
+<option value="宮川">宮川</option>
+<option value="藤坂峠">藤坂峠</option>
+<option value="南伊勢">南伊勢</option>
+<option value="磯部">磯部</option>
+
+<option value="阿児">阿児</option>
+<option value="紀伊長島">紀伊長島</option>
+<option value="尾鷲">尾鷲</option>
+<option value="八幡峠">八幡峠</option>
+<option value="熊野新鹿">熊野新鹿</option>
+
+<option value="熊野">熊野</option>
+<option value="御浜">御浜</option>
+</select>
+
+<li>地名（ 静岡県 ）</li>
+<select name="place_03">
+<option value="静岡">静岡</option>
+<option value="浜松">浜松</option>
+<option value="天竜">天竜</option>
+<option value="霧山">霧山</option>
+<option value="熊">熊</option>
+
+<option value="佐久間">佐久間</option>
+<option value="春野">春野</option>
+<option value="越木平">越木平</option>
+<option value="三倉">三倉</option>
+<option value="掛川">掛川</option>
+
+<option value="磐田">磐田</option>
+<option value="御前崎">御前崎</option>
+<option value="菊川牧之原">菊川牧之原</option>
+<option value="菊川牧之原">c</option>
+<option value="島田">島田</option>
+
+<option value="高根山">高根山</option>
+<option value="鍵穴">鍵穴</option>
+<option value="大山">大山</option>
+<option value="川根本町">川根本町</option>
+<option value="井川">井川</option>
+
+<option value="梅ヶ島">梅ヶ島</option>
+<option value="有東木">有東木</option>
+<option value="清水">清水</option>
+<option value="三ケ日">三ケ日</option>
+<option value="三ケ日">c</option>
+
+<option value="白糸">白糸</option>
+<option value="富士山">富士山</option>
+<option value="御殿場">御殿場</option>
+<option value="三島">三島</option>
+<option value="網代">網代</option>
+
+<option value="湯ヶ島">湯ヶ島</option>
+<option value="土肥">土肥</option>
+<option value="天城山">天城山</option>
+<option value="稲取">稲取</option>
+<option value="松崎">松崎</option>
+
+<option value="石廊崎">石廊崎</option>
+</select>
+</ul>
+<input type="submit" value="表示"/>
+</form>
+</div>
+</body>
+</html>
